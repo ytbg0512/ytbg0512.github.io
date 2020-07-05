@@ -152,6 +152,22 @@ button.list:active {
     color: rgb(128, 128, 128);
 }
 
+#searchbar {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: inherit;
+    border-bottom: 2px solid;
+    transition: color 1s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#searchbar:focus {
+    outline: none;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -175,6 +191,9 @@ button.list:active {
     button.list {
         background-color: rgb(15, 15, 20);
     }
+    #searchbar {
+        transition: color 1s ease;
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -186,5 +205,8 @@ button.list:active {
     }
     button.list {
         background-color: white;
+    }
+    #searchbar {
+        transition: color 1s ease;
     }
 }
