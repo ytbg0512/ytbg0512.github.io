@@ -4,6 +4,8 @@ const followSystemBtn = document.querySelector("#followSystem");
 const lightModeBtn = document.querySelector("#lightMode");
 const darkModeBtn = document.querySelector("#darkMode");
 
+const listBtn = Object.values(document.getElementsByClassName("list"));
+
 function savePreferredStyle(style) {
     localStorage.setItem("preferredStyle", style);
 }
@@ -23,6 +25,8 @@ function followSystem() {
     followSystemBtn.innerText = "✔ 시스템 설정에 따르기 (기본)";
     lightModeBtn.innerText = "항상 라이트 모드 사용";
     darkModeBtn.innerText = "항상 다크 모드 사용";
+
+    listBtn.forEach(btns => btns.style.backgroundColor = "");
 }
 
 function changeToLight() {
@@ -40,6 +44,8 @@ function changeToLight() {
     followSystemBtn.innerText = "시스템 설정에 따르기 (기본)";
     lightModeBtn.innerText = "✔ 항상 라이트 모드 사용";
     darkModeBtn.innerText = "항상 다크 모드 사용";
+
+    listBtn.forEach(btns => btns.style.backgroundColor = "white");
 }
 
 function changeToDark() {
@@ -57,6 +63,8 @@ function changeToDark() {
     followSystemBtn.innerText = "시스템 설정에 따르기 (기본)";
     lightModeBtn.innerText = "항상 라이트 모드 사용";
     darkModeBtn.innerText = "✔ 항상 다크 모드 사용";
+
+    listBtn.forEach(btns => btns.style.backgroundColor = "rgb(15, 15, 20)");
 }
 
 function init() {

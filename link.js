@@ -9,10 +9,10 @@ function handlePaintjsClick() {
     location.href = "https://ytbg0512.github.io/paintJS";
 }
 
-if (weatherBtn) {
+if (weatherBtn !== undefined) {
     weatherBtn.addEventListener("click", handleWeatherClick);
 }
 
-if (paintjsBtn) {
+if (paintjsBtn !== undefined) {
     paintjsBtn.addEventListener("click", handlePaintjsClick);
 }
