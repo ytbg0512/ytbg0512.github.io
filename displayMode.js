@@ -1,3 +1,5 @@
+const preferredStyle = localStorage.getItem("preferredStyle");
+
 const ui = document.querySelector("body");
 const popup = document.querySelector(".modal-content");
 const followSystemBtn = document.querySelector("#followSystem");
@@ -27,6 +29,9 @@ function followSystem() {
     darkModeBtn.innerText = "항상 다크 모드 사용";
 
     listBtn.forEach(btns => btns.style.backgroundColor = "");
+    if (preferredStyle == "light") {
+        listBtn.style.backgroundColor = "white";
+    }
 }
 
 function changeToLight() {
@@ -71,7 +76,6 @@ function init() {
     followSystemBtn.addEventListener("click", followSystem);
     lightModeBtn.addEventListener("click", changeToLight);
     darkModeBtn.addEventListener("click", changeToDark);
-    const preferredStyle = localStorage.getItem("preferredStyle");
     switch (preferredStyle) {
         case "followSystem":
             followSystem(); break;

@@ -148,6 +148,10 @@ button.list:active {
     z-index: 3;
 }
 
+#github-button {
+    color: rgb(128, 128, 128);
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -170,5 +174,17 @@ button.list:active {
     }
     button.list {
         background-color: rgb(15, 15, 20);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        transition: color, background-color 1s ease;
+    }
+    .modal-content {
+        transition: color, background-color 1s, opacity .2s ease;
+    }
+    button.list {
+        background-color: white;
     }
 }
