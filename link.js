@@ -8,7 +8,7 @@ function handlePadaOSClick() {
 }
 
 function handleFlectOSClick() {
-    location.href = "https://cafe.naver.com/gameppt/144553";
+    location.href = "https://youtu.be/-U3MjTaRbkY";
 }
 
 function handleWeatherClick() {
