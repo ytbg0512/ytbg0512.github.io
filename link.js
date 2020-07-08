@@ -1,5 +1,15 @@
 const weatherBtn = document.getElementById("weatherBtn");
 const paintjsBtn = document.getElementById("paintjsBtn");
+const flectOSBtn = document.getElementById("flectOSBtn");
+const padaOSBtn = document.getElementById("padaOSBtn");
+
+function handlePadaOSClick() {
+    location.href = "https://padaos.weebly.com/";
+}
+
+function handleFlectOSClick() {
+    location.href = "https://cafe.naver.com/gameppt/144553";
+}
 
 function handleWeatherClick() {
     location.href = "https://ytbg0512.github.io/weather";
@@ -15,4 +25,12 @@ if (weatherBtn !== undefined) {
 
 if (paintjsBtn !== undefined) {
     paintjsBtn.addEventListener("click", handlePaintjsClick);
+}
+
+if (flectOSBtn !== undefined) {
+    flectOSBtn.addEventListener("click", handleFlectOSClick);
+}
+
+if (padaOSBtn !== undefined) {
+    padaOSBtn.addEventListener("click", handlePadaOSClick);
 }

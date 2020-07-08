@@ -140,6 +140,17 @@ button.list:active {
     color: #3498db;
 }
 
+.category {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    text-indent: 10px;
+}
+
+.wrapper {
+    margin-bottom: 2%;
+}
+
 #close-settingsBtn {
     z-index: 3;
 }
