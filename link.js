@@ -8,7 +8,7 @@ function handlePadaOSClick() {
 }
 
 function handleFlectOSClick() {
-    location.href = "https://youtu.be/-U3MjTaRbkY";
+    location.href = "https://ytbg0512.github.io/FlectOS";
 }
 
 function handleWeatherClick() {
