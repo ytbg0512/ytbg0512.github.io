@@ -2,6 +2,7 @@ const weatherBtn = document.getElementById("weatherBtn");
 const paintjsBtn = document.getElementById("paintjsBtn");
 const flectOSBtn = document.getElementById("flectOSBtn");
 const padaOSBtn = document.getElementById("padaOSBtn");
+const gimchiBtn = document.getElementById("gimchiBtn");
 
 function handlePadaOSClick() {
     location.href = "https://padaos.weebly.com/";
@@ -19,6 +20,10 @@ function handlePaintjsClick() {
     location.href = "https://ytbg0512.github.io/paintJS";
 }
 
+function handleGimchiClick() {
+    location.href = "https://ytbg0512.github.io/gimchijjigae";
+}
+
 if (weatherBtn !== undefined) {
     weatherBtn.addEventListener("click", handleWeatherClick);
 }
@@ -33,4 +38,8 @@ if (flectOSBtn !== undefined) {
 
 if (padaOSBtn !== undefined) {
     padaOSBtn.addEventListener("click", handlePadaOSClick);
+}
+
+if (gimchiBtn !== undefined) {
+    gimchiBtn.addEventListener("click", handleGimchiClick);
 }
