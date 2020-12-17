@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: 'Montserrat','Noto Sans KR', sans-serif;
+    animation: fadeIn .7s ease;
+    overflow-wrap: break-word;
+    margin: 40px 30px 40px 30px;
+    background-color: #f5f6fa;
+    color: #2f3640;
+    transition: color, background-color 1s ease;
+    overflow: auto;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 7rem;
+    transition: color 1s ease;
+}
+
+a {
+    user-select: none;
+}

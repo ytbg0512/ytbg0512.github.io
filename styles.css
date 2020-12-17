@@ -10,7 +10,6 @@ body {
     transition: color, background-color 1s ease;
     overflow: auto;
     text-align: center;
-
 }
 
 h1 {
