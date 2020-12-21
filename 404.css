@@ -14,8 +14,17 @@ body {
 
 h1 {
     font-weight: 700;
-    font-size: 7rem;
-    transition: color 1s ease;
+    font-size: 10rem;
+    transition: transform .2s, color 1s ease;
+    user-select: none;
+}
+
+h1:hover {
+    transform: scale(1.05);
+}
+
+h1:active {
+    transform: scale(0.98);
 }
 
 a {
