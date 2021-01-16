@@ -17,6 +17,10 @@ h1 {
     font-size: 10rem;
     transition: transform .2s, color 1s ease;
     user-select: none;
+    -webkit-user-select: none;       
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
 }
 
 h1:hover {
