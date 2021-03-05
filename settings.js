@@ -38,9 +38,9 @@ function closeSettings() {
 }
 
 document.addEventListener('keydown', function(event) {
-    if(event.key == "Escape") {
+    if(event.code == "Escape") {
         closeSettings();
-    } else if(event.key == "F9") {
+    } else if(event.code == "KeyS") {
         openSettings();
     }
 });
