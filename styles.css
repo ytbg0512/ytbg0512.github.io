@@ -63,6 +63,7 @@ button.list:active {
     -ms-user-select: none;
     user-select: none;
     transition: color 1s, opacity .2s ease !important;
+    display: inline;
 }
 
 .button:hover {
@@ -152,6 +153,7 @@ button.list:active {
 
 #close-settingsBtn {
     z-index: 3;
+    color: white;
 }
 
 #maker {
@@ -208,9 +210,13 @@ button.list:active {
 
 @media (prefers-color-scheme: light) {
     body {
+        background-color: #f5f6fa;
+        color: rgb(35, 35, 40);
         transition: color, background-color 1s ease;
     }
     .modal-content {
+        background-color: #f5f6fa;
+        color: rgb(35, 35, 40);
         transition: color, background-color 1s, opacity .2s ease;
     }
     button.list {
