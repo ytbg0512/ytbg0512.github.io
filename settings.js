@@ -55,15 +55,15 @@ function init() {
     searchBar.addEventListener("focusin", blockShortcut);
     searchBar.addEventListener("focusout", allowShortcut);
 
-    if(preventKeyboardShortcut == false) {
-        document.addEventListener('keydown', (event) => {
+    document.addEventListener('keydown', (event) => {
+        if(preventKeyboardShortcut == false) {
             if(event.code == "Escape") {
                 closeSettings();
             } else if(event.code == "KeyS") {
                 openSettings();
             }
-        });
-    }
+        }
+    });
 }
 
 init();
