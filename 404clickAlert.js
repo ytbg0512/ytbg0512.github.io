@@ -5,7 +5,7 @@ let clickCount = 0;
 
 function runClickEvent() {
     if (clickCount == 5) {
-        body.style.backgroundImage = "url(https://www.costco.co.kr/medias/sys_master/images/h70/h5d/9868030345246.jpg)";
+        body.style.backgroundImage = "url(http://www.krsanup.co.kr/board/data/file/2_2_2/31277482_ax4qpv0r_BCD2B0EDB1E2B9CCBFAAB1B9.png)";
         alert('미역국 모드 활성화됨');
     } else if (clickCount > 9) {
         body.style.backgroundImage = "none";
